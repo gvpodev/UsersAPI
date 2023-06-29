@@ -1,0 +1,47 @@
+# Compiled binaries
+*.dll
+*.exe
+*.pdb
+
+# NuGet packages
+*.nupkg
+**/packages/
+
+# User-specific files
+*.suo
+*.user
+*.userprefs
+*.usertasks
+.vs/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+AnyCPU/
+build/
+msbuild.log
+msbuild.err
+
+# Visual Studio files
+*.[Oo]bj/
+*.log
+*.vspscc
+*.vssscc
+*.sln.docstates
+*.suo
+*.user
+*.vshost.*
+*.resharper
+*.resharper.user
+_ReSharper*/
+*.dotCover
+*.tc.*
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/

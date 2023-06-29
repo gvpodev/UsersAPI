@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "yee7k3wAQhYw5mhzydn4Rx+CC178zEqgfkabaA9WMIQ4Xk79SugIjUp1G9NZr0ArH/FJbf9pX4HaXCYGJWQ3HQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
