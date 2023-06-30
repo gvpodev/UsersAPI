@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace UsersAPI.Api.Controllers
 {
@@ -27,6 +28,7 @@ namespace UsersAPI.Api.Controllers
         /// <summary>
         /// Reset an User password
         /// </summary>
+        [Authorize]
         [HttpPost("reset-password")]
         public IActionResult ResetPassword()
         {
