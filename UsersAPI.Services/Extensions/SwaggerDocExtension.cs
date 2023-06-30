@@ -12,7 +12,7 @@ namespace UsersAPI.Api.Extensions
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "UsersAPI - COTI Informática",
+                    Title = "UsersAPI",
                     Description = "API to users control",
                     Version = "v1",
                     Contact = new OpenApiContact
