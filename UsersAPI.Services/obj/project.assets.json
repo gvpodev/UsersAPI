@@ -475,9 +475,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Services.csproj",
-      "projectName": "UsersAPI.Services",
-      "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Services.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Api.csproj",
+      "projectName": "UsersAPI.Api",
+      "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Api.csproj",
       "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\obj\\",
       "projectStyle": "PackageReference",
