@@ -213,6 +213,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "UsersAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/UsersAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UsersAPI.Domain.dll": {}
+        }
       }
     }
   },
@@ -540,12 +550,18 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "UsersAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UsersAPI.Domain/UsersAPI.Domain.csproj",
+      "msbuildProject": "../UsersAPI.Domain/UsersAPI.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.8",
-      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.8"
+      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.8",
+      "UsersAPI.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -577,7 +593,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj": {
+              "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
