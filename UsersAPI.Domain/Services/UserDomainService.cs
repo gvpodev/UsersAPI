@@ -25,21 +25,12 @@ namespace UsersAPI.Domain.Services
             _unitOfWork?.SaveChanges();
         }
 
-        public User? Find(Guid id)
-        {
-            return _unitOfWork?.UserRepository.FindById(id);
-        }
+        public User? Find(Guid id) => _unitOfWork?.UserRepository.FindById(id);
 
-        public User? Find(string email)
-        {
-            return _unitOfWork?.UserRepository.Find(u => u.Email.Equals(email));
-        }
+        public User? Find(string email) => _unitOfWork?.UserRepository.Find(u => u.Email.Equals(email));
 
-        public User? Find(string email, string password)
-        {
-            return _unitOfWork?.UserRepository.Find(u => u.Email.Equals(email)
-                && u.Password.Equals(password));
-        }
+        public User? Find(string email, string password) => _unitOfWork?.UserRepository.Find(u => u.Email.Equals(email)
+            && u.Password.Equals(password));
 
         public void Update(User user)
         {
@@ -47,9 +38,6 @@ namespace UsersAPI.Domain.Services
             _unitOfWork?.SaveChanges();
         }
 
-        public void Dispose()
-        {
-            _unitOfWork?.Dispose();
-        }
+        public void Dispose() => _unitOfWork?.Dispose();
     }
 }

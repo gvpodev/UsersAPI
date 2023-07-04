@@ -6,7 +6,7 @@ namespace UsersAPI.Application.Interfaces.Application
     public interface IUserAppService : IDisposable
     {
         UserResponseDto Add(UserAddRequestDto request);
-        UserResponseDto Update(UserUpdateRequestDto request);
+        UserResponseDto Update(Guid id, UserUpdateRequestDto request);
         UserResponseDto Delete(Guid id);
         UserResponseDto Get(Guid id);
     }

@@ -7,6 +7,6 @@ namespace UsersAPI.Application.Interfaces.Application
     {
         LoginResponseDto Login(LoginRequestDto request);
         UserResponseDto ForgotPassword(ForgotPasswordRequestDto request);
-        UserResponseDto ResetPassword(ResetPasswordRequestDto request);
+        UserResponseDto ResetPassword(Guid id, ResetPasswordRequestDto request);
     }
 }

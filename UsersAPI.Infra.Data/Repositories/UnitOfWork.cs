@@ -14,14 +14,8 @@ namespace UsersAPI.Infra.Data.Repositories
 
         public IUserRepository UserRepository => new UserRepository(_dataContext);
 
-        public void SaveChanges()
-        {
-            _dataContext.SaveChanges();
-        }
+        public void SaveChanges() => _dataContext.SaveChanges();
 
-        public void Dispose()
-        {
-            _dataContext?.Dispose();
-        }
+        public void Dispose() => _dataContext?.Dispose();
     }
 }
