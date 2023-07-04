@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using UsersAPI.Application.Dtos.Requests;
+using UsersAPI.Application.Interfaces.Application;
 
 namespace UsersAPI.Api.Controllers
 {
@@ -8,14 +10,21 @@ namespace UsersAPI.Api.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+        private readonly IUserAppService? _userAppService;
+
+        public UsersController(IUserAppService? userAppService)
+        {
+            _userAppService = userAppService;
+        }
+
         /// <summary>
         /// Create User account
         /// </summary>
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult Add()
+        public IActionResult Add([FromBody] UserAddRequestDto request)
         {
-            return Ok();
+            return StatusCode(201, _userAppService?.Add(request));
         }
 
         /// <summary>
