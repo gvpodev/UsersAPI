@@ -5,11 +5,8 @@ namespace UsersAPI.Infra.Data.Contexts
 {
     public class DataContext : DbContext
     {
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
+        
         public DbSet<User> Users { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseInMemoryDatabase(databaseName: "db_users");
-        }
     }
 }
