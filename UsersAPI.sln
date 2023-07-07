@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersAPI.Infra.Data", "User
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersAPI.Tests", "UsersAPI.Tests\UsersAPI.Tests.csproj", "{C1144E3D-A29B-413A-8D85-E842FA1DD264}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersAPI.Infra.IoC", "UsersAPI.Infra.CrossCutting\UsersAPI.Infra.IoC.csproj", "{64BECA8A-7C89-417D-9788-A2BE1C58377E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersAPI.Infra.IoC", "UsersAPI.Infra.CrossCutting\UsersAPI.Infra.IoC.csproj", "{64BECA8A-7C89-417D-9788-A2BE1C58377E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersAPI.Infra.Messages", "UsersAPI.Infra.Messages\UsersAPI.Infra.Messages.csproj", "{FCD82A5D-9744-48A0-81D0-41A898E35A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{64BECA8A-7C89-417D-9788-A2BE1C58377E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64BECA8A-7C89-417D-9788-A2BE1C58377E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64BECA8A-7C89-417D-9788-A2BE1C58377E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD82A5D-9744-48A0-81D0-41A898E35A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD82A5D-9744-48A0-81D0-41A898E35A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD82A5D-9744-48A0-81D0-41A898E35A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD82A5D-9744-48A0-81D0-41A898E35A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{2AC34374-B289-487D-B116-B235A3C964A5} = {F227C00D-6B8B-4F85-8F4F-A89C7E8A9E68}
 		{C1144E3D-A29B-413A-8D85-E842FA1DD264} = {B0BAB0A6-F154-473E-A56F-02FFC3CFAA53}
 		{64BECA8A-7C89-417D-9788-A2BE1C58377E} = {F227C00D-6B8B-4F85-8F4F-A89C7E8A9E68}
+		{FCD82A5D-9744-48A0-81D0-41A898E35A2B} = {F227C00D-6B8B-4F85-8F4F-A89C7E8A9E68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33615024-23CF-4714-AB35-27932A40B34C}
