@@ -1,17 +1,22 @@
 ﻿using UsersAPI.Domain.Exceptions;
+using UsersAPI.Domain.Interfaces.Messages;
 using UsersAPI.Domain.Interfaces.Repositories;
 using UsersAPI.Domain.Interfaces.Services;
 using UsersAPI.Domain.Models;
+using UsersAPI.Domain.ValueObjects;
 
 namespace UsersAPI.Domain.Services
 {
     public class UserDomainService : IUserDomainService
     {
         private readonly IUnitOfWork? _unitOfWork;
+        private readonly IUserMessageProducer? _userMessageProducer;
 
-        public UserDomainService(IUnitOfWork? unitOfWork)
+        public UserDomainService(IUnitOfWork? unitOfWork, 
+            IUserMessageProducer? userMessageProducer)
         {
             _unitOfWork = unitOfWork;
+            _userMessageProducer = userMessageProducer;
         }
 
         public void Add(User user)
@@ -21,6 +26,15 @@ namespace UsersAPI.Domain.Services
 
             _unitOfWork?.UserRepository.Add(user);
             _unitOfWork?.SaveChanges();
+            
+            _userMessageProducer?.Send(new UserMessageVO
+            {
+                Id = user.Id,
+                To = user.Email,
+                SendedAt = DateTime.UtcNow,
+                Subject = "User account",
+                Body = $@"Hello, {user.Name}! Your account has been created successfully!"
+            });
         }
 
         public void Delete(User user)
