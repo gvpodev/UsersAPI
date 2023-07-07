@@ -43,6 +43,6 @@ namespace UsersAPI.Application.Services
             return _mapper.Map<UserResponseDto>(user);
         }
 
-        public void Dispose() => throw new NotImplementedException();
+        public void Dispose() => _userDomainService.Dispose();
     }
 }
