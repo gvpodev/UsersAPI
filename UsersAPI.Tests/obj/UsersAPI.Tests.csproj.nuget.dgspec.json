@@ -4,14 +4,85 @@
     "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\UsersAPI.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\UsersAPI.Tests.csproj": {
+    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Application\\UsersAPI.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\UsersAPI.Tests.csproj",
-        "projectName": "UsersAPI.Tests",
-        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\UsersAPI.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Application\\UsersAPI.Application.csproj",
+        "projectName": "UsersAPI.Application",
+        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Application\\UsersAPI.Application.csproj",
         "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\obj\\",
+        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.pimentel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj",
+        "projectName": "UsersAPI.Domain",
+        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,7 +112,403 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.CrossCutting\\UsersAPI.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.CrossCutting\\UsersAPI.Infra.IoC.csproj",
+        "projectName": "UsersAPI.Infra.IoC",
+        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.CrossCutting\\UsersAPI.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.pimentel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Application\\UsersAPI.Application.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Application\\UsersAPI.Application.csproj"
+              },
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj"
+              },
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Data\\UsersAPI.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Data\\UsersAPI.Infra.Data.csproj"
+              },
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Messages\\UsersAPI.Infra.Messages.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Messages\\UsersAPI.Infra.Messages.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Data\\UsersAPI.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Data\\UsersAPI.Infra.Data.csproj",
+        "projectName": "UsersAPI.Infra.Data",
+        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Data\\UsersAPI.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.pimentel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Messages\\UsersAPI.Infra.Messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Messages\\UsersAPI.Infra.Messages.csproj",
+        "projectName": "UsersAPI.Infra.Messages",
+        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Messages\\UsersAPI.Infra.Messages.csproj",
+        "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.Messages\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.pimentel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Domain\\UsersAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "RabbitMQ.Client.Core.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Api.csproj",
+        "projectName": "UsersAPI.Api",
+        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Api.csproj",
+        "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.pimentel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.CrossCutting\\UsersAPI.Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.CrossCutting\\UsersAPI.Infra.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\UsersAPI.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\UsersAPI.Tests.csproj",
+        "projectName": "UsersAPI.Tests",
+        "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\UsersAPI.Tests.csproj",
+        "packagesPath": "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.pimentel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Api.csproj": {
+                "projectPath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Services\\UsersAPI.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.0.2, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.5.0, )"
