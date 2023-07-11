@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
-using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Text;
 using UsersAPI.Infra.Messages.Models;
@@ -21,20 +20,14 @@ namespace UsersAPI.Infra.Messages.Services
         {
             using (var httpClient = new HttpClient())
             {
-                try
-                {
-                    var authResponseModel = await AuthenticateAsync();
-                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResponseModel.Token);
 
-                    var messagesRequestContent = new StringContent(JsonConvert.SerializeObject(messagesRequestModel),
-                        Encoding.UTF8, "application/json");
+                var authResponseModel = await AuthenticateAsync();
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResponseModel.Token);
 
-                    await httpClient.PostAsync($"{_emailMessageSettings?.BaseUrl}/messages", messagesRequestContent);
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine(ex.Message);
-                }
+                var messagesRequestContent = new StringContent(JsonConvert.SerializeObject(messagesRequestModel),
+                    Encoding.UTF8, "application/json");
+
+                await httpClient.PostAsync($"{_emailMessageSettings?.BaseUrl}/messages", messagesRequestContent);
             }
         }
 
@@ -52,7 +45,7 @@ namespace UsersAPI.Infra.Messages.Services
                     Encoding.UTF8, "application/json");
 
                 var authResponse = await httpClient
-                    .PostAsync($"{_emailMessageSettings?.BaseUrl}auth", authRequestContent);
+                    .PostAsync($"{_emailMessageSettings?.BaseUrl}/auth", authRequestContent);
 
                 var authResponseModel = ReadResponse<AuthResponseModel>(authResponse);
 

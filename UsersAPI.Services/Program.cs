@@ -13,6 +13,7 @@ builder.Services.AddDependencyInjection();
 builder.Services.AddAutoMapperConfig();
 builder.Services.AddDbContextConfig(builder.Configuration);
 builder.Services.AddRabbitMQ(builder.Configuration);
+builder.Services.AddEmailMessage(builder.Configuration);
 
 var app = builder.Build();
 
