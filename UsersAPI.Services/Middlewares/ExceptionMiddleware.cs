@@ -30,15 +30,12 @@ namespace UsersAPI.Api.Middlewares
 
         public async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
-            switch (exception)
+            context.Response.StatusCode = exception switch
             {
-                case ApplicationException:
-                    context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                    break;
-                case Exception:
-                    context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    break;
-            }
+                ApplicationException => (int)HttpStatusCode.BadRequest,
+                not null => (int)HttpStatusCode.InternalServerError,
+                _ => context.Response.StatusCode
+            };
 
             context.Response.ContentType = "application/json";
 

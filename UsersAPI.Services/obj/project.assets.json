@@ -1479,7 +1479,8 @@
           "UsersAPI.Application": "1.0.0",
           "UsersAPI.Domain": "1.0.0",
           "UsersAPI.Infra.Data": "1.0.0",
-          "UsersAPI.Infra.Messages": "1.0.0"
+          "UsersAPI.Infra.Messages": "1.0.0",
+          "UsersAPI.Infra.Security": "1.0.0"
         },
         "compile": {
           "bin/placeholder/UsersAPI.Infra.IoC.dll": {}
@@ -1501,6 +1502,21 @@
         },
         "runtime": {
           "bin/placeholder/UsersAPI.Infra.Messages.dll": {}
+        }
+      },
+      "UsersAPI.Infra.Security/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.8",
+          "Newtonsoft.Json": "13.0.3",
+          "UsersAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UsersAPI.Infra.Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UsersAPI.Infra.Security.dll": {}
         }
       }
     }
@@ -4406,6 +4422,11 @@
       "type": "project",
       "path": "../UsersAPI.Infra.Messages/UsersAPI.Infra.Messages.csproj",
       "msbuildProject": "../UsersAPI.Infra.Messages/UsersAPI.Infra.Messages.csproj"
+    },
+    "UsersAPI.Infra.Security/1.0.0": {
+      "type": "project",
+      "path": "../UsersAPI.Infra.Security/UsersAPI.Infra.Security.csproj",
+      "msbuildProject": "../UsersAPI.Infra.Security/UsersAPI.Infra.Security.csproj"
     }
   },
   "projectFileDependencyGroups": {

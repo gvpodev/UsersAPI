@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using UsersAPI.Application.Dtos.Requests;
+using UsersAPI.Application.Dtos.Responses;
+using UsersAPI.Application.Interfaces.Application;
 
 namespace UsersAPI.Api.Controllers
 {
@@ -7,14 +10,19 @@ namespace UsersAPI.Api.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly IAuthAppService? _authAppService;
+
+        public AuthController(IAuthAppService authAppService)
+        {
+            _authAppService = authAppService;
+        }
+
         /// <summary>
         /// Authenticate User
         /// </summary>
         [HttpPost("login")]
-        public IActionResult Login()
-        {
-            return Ok();
-        }
+        [ProducesResponseType(typeof(LoginResponseDto), 200)]
+        public IActionResult Login([FromBody] LoginRequestDto request) => StatusCode(200, _authAppService?.Login(request));
 
         /// <summary>
         /// Recover User password

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "obUdp2rg+TvDuQcPubUCA0kSyecBYd+mOzz7Nvtbp6vofAU+syO8jEpbKrmR/2ENci5hKeKYZbYn+U1t7Oep4w==",
+  "dgSpecHash": "qAvcLaH5XgZx5joq91ov7FOY5zNC6YCBH9IMCydLnkle8S4v2Zg/vi+hsgH7Pe3GtV17C4V5ZfbC1KneU088OA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gabriel.pimentel\\Documents\\PersonalProjs\\coti\\arq_csharp_23\\UsersAPI\\UsersAPI.Infra.CrossCutting\\UsersAPI.Infra.IoC.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.8\\microsoft.aspnetcore.authentication.jwtbearer.7.0.8.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
@@ -44,7 +45,7 @@
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\rabbitmq.client.core.dependencyinjection\\5.0.0\\rabbitmq.client.core.dependencyinjection.5.0.0.nupkg.sha512",
     "C:\\Users\\gabriel.pimentel\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

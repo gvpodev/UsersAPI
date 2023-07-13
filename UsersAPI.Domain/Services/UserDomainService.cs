@@ -1,6 +1,7 @@
 ﻿using UsersAPI.Domain.Exceptions;
 using UsersAPI.Domain.Interfaces.Messages;
 using UsersAPI.Domain.Interfaces.Repositories;
+using UsersAPI.Domain.Interfaces.Secutiry;
 using UsersAPI.Domain.Interfaces.Services;
 using UsersAPI.Domain.Models;
 using UsersAPI.Domain.ValueObjects;
@@ -11,12 +12,15 @@ namespace UsersAPI.Domain.Services
     {
         private readonly IUnitOfWork? _unitOfWork;
         private readonly IUserMessageProducer? _userMessageProducer;
+        private readonly ITokenService? _tokenService;
 
         public UserDomainService(IUnitOfWork? unitOfWork, 
-            IUserMessageProducer? userMessageProducer)
+            IUserMessageProducer? userMessageProducer,
+            ITokenService? tokenService)
         {
             _unitOfWork = unitOfWork;
             _userMessageProducer = userMessageProducer;
+            _tokenService = tokenService;
         }
 
         public void Add(User user)
@@ -54,6 +58,24 @@ namespace UsersAPI.Domain.Services
         {
             _unitOfWork?.UserRepository.Update(user);
             _unitOfWork?.SaveChanges();
+        }
+        
+        public string Authenticate(string email, string password)
+        {
+            var user = Find(email, password);
+
+            if (user is null) throw new AccessDeniedException();
+
+            var userAuth = new UserAuthVO
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+                Role = "USER_ROLE",
+                SignedAt = DateTime.Now
+            };
+
+            return _tokenService?.CreateToken(userAuth);
         }
 
         public void Dispose() => _unitOfWork?.Dispose();

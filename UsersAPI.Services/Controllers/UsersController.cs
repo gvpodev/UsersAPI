@@ -6,7 +6,7 @@ using UsersAPI.Application.Interfaces.Application;
 
 namespace UsersAPI.Api.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "USER_ROLE")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase

@@ -2,6 +2,7 @@
 using UsersAPI.Application.Dtos.Requests;
 using UsersAPI.Application.Dtos.Responses;
 using UsersAPI.Application.Interfaces.Application;
+using UsersAPI.Domain.Exceptions;
 using UsersAPI.Domain.Interfaces.Services;
 
 namespace UsersAPI.Application.Services
@@ -26,14 +27,16 @@ namespace UsersAPI.Application.Services
 
         public LoginResponseDto Login(LoginRequestDto request)
         {
-            var user = _userDomainService?.Find(request.Email, request.Password);
-
-            return new LoginResponseDto
+            try
             {
-                AccessToken = string.Empty,
-                Expiration = DateTime.UtcNow,
-                User = _mapper.Map<UserResponseDto>(user)
-            };
+                var accessToken = _userDomainService?.Authenticate(request.Email, request.Password);
+
+                return new LoginResponseDto { AccessToken = accessToken };
+            }
+            catch (AccessDeniedException e)
+            {
+                throw new ApplicationException(e.Message);
+            }
         }
 
         public UserResponseDto ResetPassword(Guid id, ResetPasswordRequestDto request)
